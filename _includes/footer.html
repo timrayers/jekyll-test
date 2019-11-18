@@ -1,8 +1,9 @@
 {% if page.layout != 'index' %}
-{{ page.language }}
+    <!-- Get POSTS which match the same parent -->
     {% assign posts=site.posts | where:"parent", page.parent | sort: 'id' %}
     {% if posts.size == 0 %}
-        {% assign posts=site.pages | where:"language", page.language | sort: 'lang' %}
+    <!-- Get PAGES which match the same parent -->
+    {% assign posts=site.pages | where:"parent", page.parent | sort: 'id' %}
     {% endif %}
     {% if posts.size > 1 %}
     <footer class="lang-options">

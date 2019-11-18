@@ -51,3 +51,4 @@ build-iPhoneSimulator/
 
 ## Jekyll-specific files
 _site
+.jekyll-cache
