@@ -1,7 +1,8 @@
 ---
-title: My first page!
+title: Welcome to Jekyll!
 layout: default
-title:  "Welcome to Jekyll!"
+language: en_GB
+parent: my-first-page
 ---
 
 # Welcome
